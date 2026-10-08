@@ -215,4 +215,3 @@ function unlockDoor() {
     messageDisplay.textContent = "The door is locked.";
   }
 }
-
