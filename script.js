@@ -151,7 +151,7 @@ const scenes = {
       {
         text: "Pick up the key",
         action: function () {
-          pickUpItem("office key");
+          pickUpItem("Unknown key");
         },
         nextScene: "gym"
       },
@@ -357,7 +357,7 @@ function enterStaffOffice() {
 // Check if player has principal's office key
 function unlockDoor() {
 
-  if (inventory.includes("office key")) {
+  if (inventory.includes("Unknown key")) {
     updateScene("insideOffice");
   } else {
     messageDisplay.textContent = "The door is locked. You need a key.";
