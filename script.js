@@ -102,7 +102,12 @@ const scenes = {
       {
         text: "Go to the field",
         nextScene: "field"
-      }
+      },
+     {
+      text: "Upstair",
+      nextScene:"hallway"
+     }
+   
     ]
   },
 
