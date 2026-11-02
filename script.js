@@ -102,12 +102,7 @@ const scenes = {
       {
         text: "Go to the field",
         nextScene: "field"
-      },
-     {
-      text: "Upstair",
-      nextScene:"hallway"
-     }
-   
+      }
     ]
   },
 
@@ -151,7 +146,7 @@ const scenes = {
       {
         text: "Pick up the key",
         action: function () {
-          pickUpItem("Unknown key");
+          pickUpItem("office key");
         },
         nextScene: "gym"
       },
@@ -357,7 +352,7 @@ function enterStaffOffice() {
 // Check if player has principal's office key
 function unlockDoor() {
 
-  if (inventory.includes("Unknown key")) {
+  if (inventory.includes("office key")) {
     updateScene("insideOffice");
   } else {
     messageDisplay.textContent = "The door is locked. You need a key.";
